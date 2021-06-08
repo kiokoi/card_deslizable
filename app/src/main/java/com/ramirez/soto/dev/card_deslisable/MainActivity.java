@@ -5,6 +5,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
 
 import com.jarves.recycleview.HelperClasses.adapterphone;
 import com.jarves.recycleview.HelperClasses.phonehelper;
@@ -12,7 +14,7 @@ import com.jarves.recycleview.HelperClasses.phonehelper;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements adapterphone.ListItemClickListener {
-
+    int variable = 0;
     RecyclerView phoneRecycler;
     RecyclerView.Adapter adapter;
     @Override
@@ -23,7 +25,6 @@ public class MainActivity extends AppCompatActivity implements adapterphone.List
         //Hooks
         phoneRecycler = findViewById(R.id.my_recycler);
         phoneRecycler();
-
     }
 
     private void phoneRecycler() {
@@ -51,32 +52,31 @@ public class MainActivity extends AppCompatActivity implements adapterphone.List
     @Override
     public void onphoneListClick(int clickedItemIndex) {
 
-
 //            Intent mIntent;
-//            switch (clickedItemIndex){
-//                case 0: //first item in Recycler view
+           switch (clickedItemIndex){
+               case 0: //first item in Recycler view
+                   Toast toast = Toast.makeText(getApplicationContext(), "indice: "+clickedItemIndex+" boton: "+variable, Toast.LENGTH_SHORT);
+                   toast.show();
 //                    mIntent  = new Intent(FirstActivity.this, samsung.class);
 //                    startActivity(mIntent);
-//                    break;
-//                case 1: //second item in Recycler view
+                    break;
+               case 1: //second item in Recycler view
+                   Toast toast1 = Toast.makeText(getApplicationContext(), "indice: "+clickedItemIndex+" boton: "+variable, Toast.LENGTH_SHORT);
+                   toast1.show();
 //                    mIntent = new Intent(FirstActivity.this, vivo.class);
 //                    startActivity(mIntent);
 //                    break;
-//                case 2: //third item in Recycler view
+               case 2: //third item in Recycler view
+                   Toast toast2 = Toast.makeText(getApplicationContext(), "indice: "+clickedItemIndex+" boton: "+variable, Toast.LENGTH_SHORT);
+                   toast2.show();
 //                    mIntent = new Intent(FirstActivity.this, apple.class);
 //                    startActivity(mIntent);
 //                    break;
-        //              case 3: //third item in Recycler view
-//                    mIntent = new Intent(FirstActivity.this, realme.class);
-//                    startActivity(mIntent);
-//                    break;
-//                case 4: //third item in Recycler view
-//                    mIntent = new Intent(FirstActivity.this, poco.class);
-//                    startActivity(mIntent);
-//                    break;
-//
-//        }
+        }
+    }
 
+    public void Boton_pres(View v){
+        variable = 1 + 2;
 
     }
 }

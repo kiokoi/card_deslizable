@@ -33,12 +33,14 @@
                         android:layout_height="wrap_content"
                         android:textAllCaps="true"
                         android:text="All phones"
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="View All"
+                        android:textColor="@color/black"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
                         android:textStyle="bold"

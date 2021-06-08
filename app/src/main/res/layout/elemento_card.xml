@@ -35,6 +35,44 @@ android:layout_width="280dp">
             android:text="Primera prueba"
             android:textSize="25sp" />
 
+        <TextView
+            android:id="@+id/cantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-6dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginBottom="133dp"
+            android:text="0"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/phone_boton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="37dp"
+            android:layout_marginBottom="179dp"
+            android:background="@android:drawable/ic_dialog_email"
+            android:text="Mas"
+            android:onClick="Boton_pres"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/phone_boton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="27dp"
+            android:background="@android:drawable/ic_dialog_email"
+            android:onClick="Boton_pres"
+            android:text="menos"
+            android:textColor="@color/black" />
+
     </RelativeLayout>
 
 </android.support.v7.widget.CardView>
